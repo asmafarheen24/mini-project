@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/log.jpg");
+}
+.login{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+    background:black;
+    height: 400px;
+  width: 60%;
+  margin: auto;
+}

@@ -1,0 +1,15 @@
+body{
+    background-image: url(../images/log.jpg);
+}
+.register{
+    align-items: center;
+    justify-items: center;
+    background:black;
+    height: 500px;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+    float: none;
+    
+    
+}

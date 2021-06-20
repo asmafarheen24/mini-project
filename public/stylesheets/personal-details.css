@@ -1,0 +1,47 @@
+body{
+    background: lightgoldenrodyellow;
+    background: url("../images/water.jpg") left top no-repeat,url("../images/workout.jpg") right bottom no-repeat,url("../images/food.jpg") left bottom no-repeat,url("../images/pea.jpg") right top no-repeat;
+    background-size: 400px, 300px, 300px, 300px auto;
+    
+}
+.main{
+    width: 600px;
+    height: 600px;
+    background-color: lightblue;
+    margin: auto;
+    
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+.heading{
+    width: 600px;
+    height: 30px;
+    background-color: palevioletred;
+}
+.proceed{
+    align-items: center;
+  justify-items: center;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1.5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.centerbutton
+{
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.proceed:hover {
+    background-color:rgb(59, 3, 59);
+    color: white;
+  }
