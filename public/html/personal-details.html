@@ -7,18 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/personal-details.css">
 </head>
-<body>
+<body >
     <div class="main">
-        <!-- <form  id="form1">
-            <label for="fname">what do you want us to call you(Nickname):</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label><b>DateofBirth: &nbsp;&nbsp;&nbsp;  </b></label>
-         <input type='date'>
-         <label for="fname">what do you want us to call you(Nickname):</label>
-         <input type="text" id="fname" name="fname"><br><br>
-            
-            <input type="submit" value="Submit">
-          </form> -->
+        
           
           <div class="heading"><h3>*BREAK THE ICE*</h3></div><br>
           <table>
@@ -35,6 +26,16 @@
                 <td class="age"><strong>AGE :</strong></td>
                 <td class="age"><input name="age" id="age" type="number"></td>
                 </tr>
+                <tr>
+                    <td class="age"><strong>GENDER :</strong></td>
+                    <td><select name="gender" id="gender">
+                        <option value="volvo">Female</option>
+                        <option value="saab">Male</option>
+                        <option value="opel">Other</option>
+                        
+                      </select></td>
+                    
+                    </tr>
                 <td class="con"><strong>COUNTRY :</strong></td>
                 <td class="con"><input name="con" id="con" type="text"></td>
                 </tr>
@@ -77,15 +78,79 @@
                   <td class="age"><strong>FAVORITE DESSERT :</strong></td>
                   <td class="age"><input name="age" id="age" type="text"></td>
                   </tr>
+                  <tr>
                   <td class="con"><strong>DO YOU WORKOUT? :</strong></td>
                   <td class="con"><input name="con" id="con" type="checkbox">YES</td>
                   <td class="con"><input name="con" id="con" type="checkbox">NO</td>
                   </tr>
-              
-              </table>
+                  </table>
+              <div class="heading"><h3>*BODY ANALYSIS*</h3></div>
               <br>
+              
+              <tr>
+              <td class="fs"><strong>HEIGHT(in-inches) :</strong></td>
+            <td class="fs2"><input name="fsn" id="fsn" type="number"></td> 
+            </tr>
+            
+            <tr>
+            <td class="ls"><strong>WEIGHT :</strong></td>
+            <td class="ls2"><input name="lsn" id="lsn" type="NUMBER"></td>
+            </tr>
+            <br>
+            <tr>
+                <td class="ls"><strong>ARE YOU A :</strong></td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
+                    <label for="O-ve">VEGETARIAN</label></td>
+                <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
+                    <label for="A+ve">NON-VEGETARIAN</label></td>
+                    <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
+                        <label for="A+ve">EGGETERIAN</label></td>
+            </tr>
+            <tr>
+                <td class="ls"><strong>BLOOD GROUP :</strong></td>
+                <td><input type="radio" id="O+ve" name="Blood" value="O+ve"><label for="O+ve">O+ve</label></td>
+                <td> <input type="radio" id="O-ve" name="Blood" value="O-ve">
+                    <label for="O-ve">O-ve</label></td>
+                <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
+                    <label for="A+ve">A+ve</label></td>
+                <td><input type="radio" id="A-ve" name="Blood" value="A-ve">
+                    <label for="A-ve">A-ve</label></td>
+                <td> <input type="radio" id="B+ve" name="Blood" value="B-ve">
+                    <label for="B+ve">B+ve</label></td>
+                <td><input type="radio" id="B-ve" name="Blood" value="B-ve">
+                    <label for="B-ve">B-ve</label></td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="radio" id="AB+ve" name="Blood" value="AB+ve">
+                        <label for="AB+ve">AB+ve</label></td>
+                    <td><input type="radio" id="AB-ve" name="Blood" value="AB-ve">
+                        <label for="AB-ve">AB-ve</label></td>
+                    
+                </tr>
+                <tr>
+                    <br><br>
+                    <td class="ls"><strong>HEALTH ISSUES(if any) :</strong></td>
+                <td><input type="checkbox">
+                    <label>DIABETES</label></td>
+                    <td><input type="checkbox">
+                        <label>OBESITY</label></td>
+                    <td><input type="checkbox">
+                        <label>DIARRHEA</label></td><br>
+                    
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td><input type="checkbox"> <label>CANCER</label></td>
+                    <td><input type="checkbox">
+                        <label>CAEDIAC REALTED </label></td><br><br>
+                        <tr>
+                     <td><label><strong>OTHERS(if any) :</strong></label>
+                        <input type="text"></td></tr>
+
+                </tr>
+            
+              </table>
+              <br><br><br>
               <div class="centerbutton">
-              <a href="/body-mass" class="proceed">PROCEED</a>
+              <a href="/login" class="proceed">PROCEED</a>
               </div>
     </div>
     

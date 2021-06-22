@@ -23,7 +23,9 @@ app.use('/', indexRouter);
 //app.use('/login', loginRouter);
 app.use('/users', usersRouter);
 var users = require('./backend/models/userModel');
+
 app.post('/api/register', function(req,res){
+    console.log(req.body)
     users.find({email : req.body.email }, function (err, data) {
         if(err){ res.status(400).json({msg:"Failed"}); }
         else {//console.log(data);
@@ -38,7 +40,7 @@ app.post('/api/register', function(req,res){
                     res.redirect("/register");
                 }
                 else {
-                    res.redirect("/login");
+                    res.redirect("/personaldetails");
                    }
                 });
               }
@@ -49,17 +51,18 @@ app.post('/api/register', function(req,res){
 
 
 app.post('/api/login', function(req,res){
-    //console.log(req)
+    console.log(req.body)
     //res.send(req)
     users.find(req.body , function (err, data) {
         if(err){ res.status(400).json({msg:"Failed"}); }
         else if(data.length==1)
         {
-            res.redirect("/");
+            // res.redirect("/main");
+            res.json(data)
               
              }
              else{
-                 res.redirect("/login");
+                //  res.redirect("/login");
              }
     });
 })

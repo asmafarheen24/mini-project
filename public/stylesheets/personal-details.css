@@ -1,13 +1,13 @@
 body{
-    background: lightgoldenrodyellow;
+    background-color: plum;
     background: url("../images/water.jpg") left top no-repeat,url("../images/workout.jpg") right bottom no-repeat,url("../images/food.jpg") left bottom no-repeat,url("../images/pea.jpg") right top no-repeat;
-    background-size: 400px, 300px, 300px, 300px auto;
+    background-size: 450px, 450px, 500px, 400px auto;
     
 }
 .main{
     width: 600px;
-    height: 600px;
-    background-color: lightblue;
+    height: 900px;
+    background-color: slategrey;
     margin: auto;
     
     justify-content: center;
@@ -18,7 +18,7 @@ h3{
 .heading{
     width: 600px;
     height: 30px;
-    background-color: palevioletred;
+    background-color: rgb(236, 155, 182);
 }
 .proceed{
     align-items: center;

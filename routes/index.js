@@ -26,5 +26,9 @@ router.get('/bodymass', function(req, res, next) {
   let bodymass=path.join(__dirname,"/../public/html/body-mass.html");
   res.sendFile(bodymass);
 });
+router.get('/main', function(req, res, next) {
+  let k=path.join(__dirname,"/../public/html/main.html");
+  res.sendFile(k);
+});
 
 module.exports = router;

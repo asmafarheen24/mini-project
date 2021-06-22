@@ -1,3 +1,4 @@
+@import '~bootstrap/dist/css/bootstrap.css';
 body {
 background-color: rgb(235, 197, 235);
 background-image:url("../images/tm2.jpg"); 
