@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/personal-details.css">
 </head>
 <body >
+    <script src="/javascripts/bmi.js"></script>
     <div class="main">
         
           
@@ -88,25 +89,26 @@
               <br>
               
               <tr>
-              <td class="fs"><strong>HEIGHT(in-inches) :</strong></td>
-            <td class="fs2"><input name="fsn" id="fsn" type="number"></td> 
+              <td class="height"><strong>HEIGHT(in-cm) :</strong></td>
+            <td class="height"><input name="height" id="height" type="number"></td> 
             </tr>
             
             <tr>
             <td class="ls"><strong>WEIGHT :</strong></td>
-            <td class="ls2"><input name="lsn" id="lsn" type="NUMBER"></td>
+            <td class="ls2"><input name="weight" id="weight" type="NUMBER"></td>
             </tr>
             <br>
             <tr>
-                <td class="ls"><strong>ARE YOU A :</strong></td>
+                <td class="ls"><strong>I AM A :</strong></td>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
-                    <label for="O-ve">VEGETARIAN</label></td>
-                <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
-                    <label for="A+ve">NON-VEGETARIAN</label></td>
-                    <td><input type="radio" id="A+ve" name="Blood" value="A+ve">
-                        <label for="A+ve">EGGETERIAN</label></td>
+                <td><input type="radio" id="veg" name="veg" value="veg">
+                    <label for="veg">VEGETARIAN</label></td>
+                <td><input type="radio" id="nonveg" name="nonveg" value="nonveg">
+                    <label for="nonveg">NON-VEGETARIAN</label></td>
+                    <td><input type="radio" id="egg" name="egg" value="egg">
+                        <label for="egg">EGGETERIAN</label></td>
             </tr>
+            <br>
             <tr>
                 <td class="ls"><strong>BLOOD GROUP :</strong></td>
                 <td><input type="radio" id="O+ve" name="Blood" value="O+ve"><label for="O+ve">O+ve</label></td>
@@ -150,7 +152,8 @@
               </table>
               <br><br><br>
               <div class="centerbutton">
-              <a href="/login" class="proceed">PROCEED</a>
+                  <input type="submit" value="submit" onclick="data()">
+              <!-- <a href="/login" class="proceed">PROCEED</a> -->
               </div>
     </div>
     
