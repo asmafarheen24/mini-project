@@ -30,5 +30,24 @@ router.get('/main', function(req, res, next) {
   let k=path.join(__dirname,"/../public/html/main.html");
   res.sendFile(k);
 });
+router.get('/hn', function(req, res, next) {
+  let hn=path.join(__dirname,"/../public/html/hn.html");
+  res.sendFile(hn);
+});
+router.get('/hv', function(req, res, next) {
+  let hv=path.join(__dirname,"/../public/html/hv.html");
+  res.sendFile(hv);
+});
+
+router.get('/on', function(req, res, next) {
+  let on=path.join(__dirname,"/../public/html/on.html");
+  res.sendFile(on);
+});
+
+router.get('/ov', function(req, res, next) {
+  let ov=path.join(__dirname,"/../public/html/ov.html");
+  res.sendFile(ov);
+});
+
 
 module.exports = router;
