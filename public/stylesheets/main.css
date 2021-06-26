@@ -1,0 +1,179 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .navbar {
+      width: 100%;
+      background-color:gray;
+      overflow: auto;
+    }
+    
+    .navbar-right{
+      float: right;
+    }
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background-color:lightsteelblue;
+    }
+    
+    .active {
+      background-color:black;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+    .diet-button{
+    background-color:white; /* Green */
+  border:thick;
+  color: black;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    }
+    .cover{
+        
+        width: auto;
+ height: 580px;
+  background-color: chocolate;
+ background-image: url("../images/cover-final.jpg"); 
+    }
+.side{
+        float:right;
+                background:cadetblue;
+                width:24%;
+                height:575px;
+                border: 5px outset black;
+    }
+    .content{
+        border: 5px ;
+        width: 24%x;
+ height: 60px;
+ background-color:white ;
+color: black;
+}
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 35px;
+    
+    text-align: center;
+    /* text-decoration: none;
+    display: inline-block; */
+    height: 60px;
+    width: 24%x;
+    font-size: 16px;
+    margin: 12px 2px;
+    
+    border-radius: 12px;
+  }
+  .myDiv {
+    
+    background-color: rgb(248, 206, 248);    
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    height: 305px;
+    width: 55%;
+    position: absolute;
+   
+  }
+  .myDiv1 {
+    
+    background-color:rgb(202, 231, 243);    
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    height: 300px;
+    width: 55%;
+    float: right;
+  }
+  .myDiv2 {
+    
+    background-color:lightgoldenrodyellow;    
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    height: 300px;
+    width: 55%;
+    float: left;
+  }
+  .myDiv3 {
+    
+    background-color: lightcyan;    
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    height: 300px;
+    width: 55%;
+    float: right;
+  }
+  .myDiv4 {
+    
+    background-color:peachpuff;    
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    height: 380px;
+    width: 55%;
+    float: left;
+    
+  }
+  .veg{   
+   position: absolute;
+   
+   right: 350px; 
+  }
+  .cf{
+    height: 300px;
+    width: auto;
+
+  }
+  .fruit{  
+    position: absolute;
+    left: 350px;
+    float: right;
+  }
+  .grain{   
+    right: 350px;
+  }
+  .broc{   
+    right: 1000px;
+    float: right;
+  }
+  .avo{     
+    bottom: 0; 
+    right: 350px;
+  }
+  .quotes{
+    color:black;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 7em;
+    padding-top: 7em;
+    position: absolute;
+}
+.authors {
+  color:black;
+  font-size: 2em;
+  font-weight: bolder;
+  font-style: italic;
+  padding-left: 30em;
+  padding-top: 9em;
+  position: absolute;
+}

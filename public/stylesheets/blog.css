@@ -1,0 +1,190 @@
+body{
+    background-image: url("../images/blog.jpg");
+}
+.head{
+height: 30px;
+width: auto;
+background-color: darkgray;
+color: black;
+text-align: center;
+align-items: center;
+font-size:  25px;
+}
+.namehead{
+    background-color: gray;
+    height: 30px;
+    width: fit-content;
+}
+.mr{
+    height: 285px;
+    width: auto;
+    background-color: #fce0c8;
+    
+}
+.ruj{
+    height:230px;
+    width: 410px;
+    background-color: ivory;
+    border: 5px solid white;
+    
+}
+.rujtext{
+    height:230px;
+    width: 200px;
+    float: right;
+    background-color:black;
+    color: blanchedalmond;
+    
+}
+.rh{
+    height: 60px;
+    width: 780px;
+    position:absolute;
+    top:60px;
+    right:100px;
+    /* border: 2px solid white; */
+     //background-color: darkcyan;
+     color: black;
+}
+.rh1{
+    height: 70px;
+    width:200px;
+    position: absolute;
+    top:140px;
+    right:600px;
+    border: 3px solid black;
+    /* background-color: rgb(160, 212, 221); */
+    background-color: lightslategray;
+    text-align: center;
+    color:black;
+}
+.rh2{
+    height: 70px;
+    width:300px;
+    position: absolute;
+    top:140px;
+    right:260px;
+    border: 3px solid black;
+    background-color: lightslategray;
+    
+    
+    text-align: center;
+    color:black;
+}
+.rh3{
+    height: 70px;
+    width:200px;
+    position: absolute;
+    top:220px;
+    right:600px;
+    border: 3px solid black;
+    background-color: lightslategray;
+  
+    
+    text-align: center;
+    color: black;
+}
+.rh4{
+    height: 70px;
+    width:530px;
+    position: absolute;
+    top:220px;
+    right:30px;
+    border: 3px solid black;
+    background-color: lightslategray;
+    
+    
+    text-align: left;
+    color:black;
+}
+.text{
+    
+    width: 700px;
+	height: 190px;
+	transform: skew(-20deg);
+	background: #555;
+    color: white;
+    
+    
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    text-align: left;
+}
+.mn{
+    background-color: aquamarine;
+    height: 310px;
+    width: auto;
+    }
+.ni{
+    float: right;
+    height: 250px;
+    width: 420px;
+    background-color: white;
+    border: 5px solid white;
+}
+.nitext{
+    height:250px;
+    width: 200px;
+    float: right;
+    background-color:black;
+    color: blanchedalmond;
+}
+.ntext{
+    width: 800px;
+	height: 200px;
+	transform: skew(-20deg);
+	background: #555;
+    position: absolute ;
+    top: 410px;
+    left: 50px;
+    color:white;
+    text-align: center;
+}
+.mk{
+    height: 285px;
+    width: auto;
+    background-color: rgb(226, 186, 226);
+    
+}
+.khyati{
+    height:230px;
+    width: 410px;
+    background-color: ivory;
+    border: 5px solid white;
+    
+}
+.khyathitext{
+    height:230px;
+    width: 200px;
+    float: right;
+    background-color:black;
+    color: blanchedalmond;
+    
+}
+.katsays{
+    width: 700px;
+	height: 200px;
+	transform: skew(-20deg);
+	background: #555;
+    position: absolute ;
+    top: 730px;
+    right:100px;
+    color:white;
+    text-align: center;
+}
+.ans{
+    height: 150px;
+    width: auto;
+    background-color: sandybrown;
+    align-content: center;
+    font-size: 29px;
+}
+.qa{
+    height: 1200px;
+    width: auto;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}

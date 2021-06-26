@@ -4,60 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheets"   media="all">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
-</head>
+    <title>document</title>
+    <link rel="stylesheet"  href="/stylesheets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><strong>Home</strong>
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                  
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              <input type="submit" value="MY DIET CHART" onclick="diet(healthy,nonveg)">
-            </form>
-          </div>
-        </div>
-      </nav>
-    <h1 class="head">hello</h1>
+    <header>
+        <nav class="navbar">
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> News</a>
+            <!-- <span id="not-logged" class="navbar-right">
+                <a href="#"><i class="fa fa-fw fa-login"></i> Login </a>
+                <a href="#"><i class="fa fa-fw fa-register"></i> Register </a>
+                </span> -->
+                
+                <input class="diet-button" type="button"  value="MY DIET CHART" onclick="diet()">
+            </span>
+
+            <span id="logged-in" class="navbar-right">
+                <a href="#"><i class="fa fa-fw fa-welcome"></i> Welcome Guest </a>
+                <a href="#"><i class="fa fa-fw fa-logout"></i> HELP </a>
+
+            </span>
+            
+          </nav>
+
+    </header>
+    <!-- <div class="side">
+      <h1 class="head">hello</h1>
+      <h1>LET TODAY BE THE START OF SOMETHING NEW</h1>
+       <div class="content">
+         <h1 style="font-size:2vw;"> CONTENTS</h1>
+         <input class="button" style="font-size: 2vw;" type="button"  value="MY DIET CHART" onclick="diet()">
+         <input class="button" style="font-size: 2vw;" type="button"  value="MY DIET CHART" onclick="diet()">
+         <input class="button" style="font-size: 2vw;" type="button"  value="MY DIET CHART" onclick="diet()">
+         
+       </div>
+    </div> -->
+    
+    <div class="cover">
+        <!-- <img src="../images/cover-b.jpg" style="height: 500px; width:100%;">  -->
+        <div id="quoteDisplay" class="quotes">
+            <!-- quotes display here -->
+         </div>
+         <div id="authorDisplay" class="authors">
+            <!-- quotes display here -->
+         </div>
+    </div>
+    
     <script src="/javascripts/main.js"></script>
     <script src="/javascripts/bmi.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js></script>
+    <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <button onclick="logout()">logout</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function logout() {
+            $.ajax({
+                url: "/api/logout",
+                method: "get",
+                success: function() {
+
+                    window.location = '/login'
+                },
+                error: function() {
+
+                    window.location.href = '/'
+                }
+            })
+        }
+        $.ajax({
+            url: "/getdetails",
+            method: "get",
+            success: function(data) {
+                $("#name").html(`welcome ` + data.username);
+            }
+        })
+    </script> -->
+    <div class="cf">
+        <div class="myDiv">
+          <h2>Fermented vegetables</h2>
+          <h3></h3>Fermented vegetables provide all the nutrients of their unfermented counterparts as well as healthful doses of probiotics.</p>
+          <p>Probiotics are beneficial bacteria that are present in the body and in some foods and supplements. Some researchers believe that they can improve gut health.</p>
+          <ul>
+            <li>cabbage, as sauerkraut</li>
+            <li>cucumbers, as pickles</li>
+            <li>carrots</li>
+            <li>cauliflower</li>
+          </ul> 
+          </div>
+          <div class="veg">
+            <img src="../images/veg.jpg" style="width: 250px; ; height: 305px;">
+          </div>
+        
+        </div>
+        <div class="df">
+        <div class="myDiv1">
+          <h2>Fruits</h2>
+          <p><stron>Eating more fruit is an excellent way to improve overall health and reduce the risk of disease.</stron></p>
+          <p>Fruits are an excellent source of essential vitamins and minerals, and they are high in fiber. Fruits also provide a wide range of health-boosting antioxidants, including flavonoids.</p>
+          <p>Eating a diet high in fruits and vegetables can reduce a person’s risk of developing heart disease, cancer, inflammation, and diabetes. Citrus fruits and berries may be especially powerful for preventing disease.</p>
+        </div>
+        <div class="fruit">
+          <img src="../images/fruits.jpg" style="width: 250px; ; height: 297px;">
+        </div>
+      </div>
+      <div>
+        <div class="myDiv2">
+          <h2>High-fiber legumes</h2>
+          <p>Legumes are fiber-rich plant-based foods that include beans, lentils, and peas.</p>
+          <p>Beans are a good source of fermentable fibers. This fiber moves into the large intestine and helps to feed the diverse colony of healthy bacteria in the gut.</p>
+          <p>Researchers have found connectionsTrusted Source between a healthy gut microbiome and lower rates of obesity and type 2 diabetes.</p>
+        </div>
+        <div class="grain">
+          <img src="../images/grains.jpg" style="width: 250px; ; height: 297px;">
+        </div>
+      </div>
+      
+      <div class="db">
+        <div class="myDiv3">
+          <h2>Broccoli</h2>
+          <p>Broccoli is an incredibly healthful vegetable that belongs to the same family as cabbage, kale, and cauliflower. These are all cruciferous vegetables.</p>
+          <p>Each cup of chopped and boiled broccoli contains:</p>
+          <ul>
+            <li>around 31 calories</li>
+            <li>the full daily requirement of vitamin K</li>
+            <li>twice the daily recommended amount of vitamin C</li>
+          </ul>
+        </div>
+        <div class="broc">
+          <img src="../images/broccoli.jpg " style="width: 250px; ; height: 297px;">
+        </div>
+      </div>
+      <div class="da">
+        <div class="myDiv4">
+          <h2>Avocado</h2>
+          <p>Avocados are rich in oleic acid, a monounsaturated fat which helps lower cholesterol levels.Avocados are a great source of vitamins C, E, K, and B-6, as well as riboflavin, niacin, folate, pantothenic acid, magnesium, and potassium. They also provide lutein, beta-carotene, and omega-3 fatty acids.</p>
+          <p>Avocados are nutrient rich.According to the USDA National Nutrient DatabaseTrusted Source, one serving (one-fifth of an avocado, approximately 40 grams) contains:</p>
+          <ul>
+            <li>64 calories</li>
+            <li>almost 6 grams of fat</li>
+            <li>3.4 grams of carbohydrate</li>
+            <li>less than a gram of sugar</li>
+            <li>almost 3 grams of fiber</li>      
+          </ul>
+        </div>
+        <div class="avo">
+          <img src="../images/avocado.jpg" style="width: 250px; ; height: 380px;">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
