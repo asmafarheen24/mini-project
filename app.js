@@ -8,15 +8,33 @@ var dbconnect = require('./backend/lib/connectLib');
 var config = require('./backend/config/config');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-//require('./backend/lib/dbUsersBootstrap').createUsers();
+const { request } = require('express');
+const MongoStore = require('connect-mongo');
+
+
 
 var app = express();
+
 dbconnect.connect();
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.use(cookieParser());
+var session = require("express-session");
+app.use(session({
+    secret: "thi is secret!!!!",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        maxAge: 60 * 60 * 1000
+    },
+    store: MongoStore.create({ mongoUrl: process.env.MONGO_CONNECTION_STRING })
+
+}))
 
 app.use('/', indexRouter);
 

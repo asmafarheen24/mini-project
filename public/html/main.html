@@ -13,20 +13,18 @@
     <header>
         <nav class="navbar">
             <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
-            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-            <a href="#"><i class="fa fa-fw fa-user"></i> News</a>
-            <!-- <span id="not-logged" class="navbar-right">
-                <a href="#"><i class="fa fa-fw fa-login"></i> Login </a>
-                <a href="#"><i class="fa fa-fw fa-register"></i> Register </a>
-                </span> -->
+            <a href="#"><i class="fa fa-fw fa-search"></i> About</a> 
+            <a href="/blog"><i class="fa fa-fw fa-search"></i> Blog</a> 
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Help</a> 
+            
+            
                 
                 <input class="diet-button" type="button"  value="MY DIET CHART" onclick="diet()">
             </span>
 
-            <span id="logged-in" class="navbar-right">
-                <a href="#"><i class="fa fa-fw fa-welcome"></i> Welcome Guest </a>
-                <a href="#"><i class="fa fa-fw fa-logout"></i> HELP </a>
+            
+                
+                <button class="logout" onclick="logout()">logout</button>
 
             </span>
             
@@ -47,20 +45,22 @@
     
     <div class="cover">
         <!-- <img src="../images/cover-b.jpg" style="height: 500px; width:100%;">  -->
+        <div class="qut">
         <div id="quoteDisplay" class="quotes">
-            <!-- quotes display here -->
+           
          </div>
          <div id="authorDisplay" class="authors">
-            <!-- quotes display here -->
+           
+         </div>
          </div>
     </div>
+    
     
     <script src="/javascripts/main.js"></script>
     <script src="/javascripts/bmi.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <button onclick="logout()">logout</button>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         function logout() {
@@ -69,22 +69,22 @@
                 method: "get",
                 success: function() {
 
-                    window.location = '/login'
+                    window.location = '/'
                 },
                 error: function() {
 
-                    window.location.href = '/'
+                    window.location.href = '/login'
                 }
             })
         }
-        $.ajax({
-            url: "/getdetails",
-            method: "get",
-            success: function(data) {
-                $("#name").html(`welcome ` + data.username);
-            }
-        })
-    </script> -->
+        // $.ajax({
+        //     url: "/getdetails",
+        //     method: "get",
+        //     success: function(data) {
+        //         $("#name").html(`welcome ` + data.username);
+        //     }
+        // })
+    </script> 
     <div class="cf">
         <div class="myDiv">
           <h2>Fermented vegetables</h2>
@@ -170,3 +170,6 @@
 
 </body>
 </html>
+
+
+

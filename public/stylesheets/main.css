@@ -14,7 +14,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     
     .navbar a {
       float: left;
-      padding: 12px;
+      padding: 16px;
       color: white;
       text-decoration: none;
       font-size: 17px;
@@ -36,7 +36,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     }
     .diet-button{
     background-color:white; /* Green */
-  border:thick;
+  border:5px solid red;
   color: black;
   padding: 13px 32px;
   text-align: center;
@@ -160,6 +160,9 @@ color: black;
     right: 350px;
   }
   .quotes{
+    
+   
+    
     color:black;
     font-size: 2em;
     font-weight: bolder;
@@ -167,6 +170,7 @@ color: black;
     padding-left: 7em;
     padding-top: 7em;
     position: absolute;
+    
 }
 .authors {
   color:black;
@@ -176,4 +180,20 @@ color: black;
   padding-left: 30em;
   padding-top: 9em;
   position: absolute;
+}
+/* .qut{
+  height: 300px;
+  width: 300px;
+  background-color: brown;
+} */
+.logout{
+  background-color:white; /* Green */
+  border: 3px solid black;
+  color: black;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
 }
