@@ -114,5 +114,9 @@ router.get('/blog', function(req, res, next) {
   let blog=path.join(__dirname,"/../public/html/blog.html");
   res.sendFile(blog);
 });
+router.get('/workout', function(req, res, next) {
+  let workout=path.join(__dirname,"/../public/html/workout.html");
+  res.sendFile(workout);
+});
 
 module.exports = router;

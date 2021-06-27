@@ -1,0 +1,73 @@
+.head{
+    height: 50px;
+    width: auto;
+    background-color: rosybrown;
+    color: sienna;
+    text-align: center;
+}
+body{
+    background-image: url(../images/wbg.jpg);
+}
+.name{
+    height: 30px;
+    width: fit-content;
+    background-color:silver ;
+    
+}
+.v2{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 90px;
+    
+}
+.v3{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 500px;
+}
+.v4{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 900px;
+}
+.v5{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 1300px;
+}
+.v6{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 1710px;
+}
+.v7{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 2110px;
+}
+.v8{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 2530px;
+}
+.v9{
+    height: 370px;
+    width: 600px;
+    position: absolute;
+    left: 750px;
+    top: 2950px;
+}
