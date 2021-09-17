@@ -190,10 +190,23 @@ color: black;
   background-color:white; /* Green */
   border: 3px solid black;
   color: black;
-  padding: 13px 32px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   float: right;
+}
+.head{
+  background-color:gray; /* Green */
+  /* border: 3px solid black; */
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  right: 100px;
+  
 }

@@ -1,4 +1,4 @@
-// document.getElementsByClassName("head") [0].innerHTML="Hello"+localStorage.getItem("username")
+document.getElementsByClassName("head") [0].innerHTML="Welcome "+localStorage.getItem("username")
 const quotes=[
     "It is health that is real wealth and not pieces of gold and silver","“WHEN DIET IS WRONG, MEDICINE IS OF NO USE. WHEN DIET IS CORRECT, MEDICINE IS OF NO NEED.","The groundwork of all happiness is health.","It took more than a day to put it on. It will take more than a day to take it off.",
     "If you keep good food in your fridge, you will eat good food.","It takes five minutes to consume 500 calories. It takes two hours to burn them off.",
